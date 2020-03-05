@@ -197,65 +197,6 @@ In JavaScript, data is represented using the following data types:
 
 >
 
-#### If statements
-
----
-
-If statements execute code based on if a certain condition is met. This is determined by the use of logical operators. The most common logical operators are:
-
-- `>` and `>=` meaning greater than, and greater than or equal to. Usually used to compare two numbers
-- `<` and `<=` meaning less than or less than, and less than or equal to. Usually used to compare numbers.
-- `===` or the equality operator. Used to check exact equality of two values. Should only be used on primitive data types.
-- `!==` or the inequality operator. Used to check for inequality of two values. Should only be used on primitive data types.
-- `&&` or the and operator. Used to check if two separate conditions evaluate to true.
-- `||` or the or operator. Used to check if either of two separate conditions evaluate to true.
-
-The condition for an if statement is contained within parentheses `()` while the code to be executed is contained in curly brackets `{}`. An example of an if statement could be:
-
-```js
-if (2 === 2) {
-  console.log('Math still works')
-}
-```
-
-> As long as 2 is equal to 2, when we execute this file, the string `'Math still works'` will be printed to the console. However, if we write the following if statement:
-
-```js
-if (2 === 2 && 2 === 4) {
-  console.log('Math is broken')
-}
-```
-
-> Because, 2 will never be equal to both 2 and 4, we will never see this console log.
-
-You can also provide `else` and `else if` statements to an if statement to handle exceptions. To build on our previous examples we could say:
-
-```js
-if (2 === 2 && 2 === 4) {
-  console.log('Math is broken')
-} else {
-  console.log('Math still works')
-}
-```
-
-> In this case we would see the second console log.
-
-Else if statements are useful when comparing many conditions and are structured identially to regular if statements. For example:
-
-```js
-var num = 50
-
-if (num >= 0 && num < 25) {
-  console.log('Greater than zero, less than 25')
-} else if (num >= 25 && num < 100) {
-  console.log('Greater than 25, less than 100')
-} else {
-  console.log('Greater than 100')
-}
-```
-
-> Depending on the value assigned to the `num` variable, we will see a different console log.
-
 ### Functions
 
 ---
@@ -339,6 +280,65 @@ var hiBob = sayHi('Bob')
 ```
 
 > Remember: Functions and if statements can also be nested inside of each other. The possibilities are endless!
+
+### If Statements
+
+---
+
+If statements execute code based on if a certain condition is met. This is determined by the use of logical operators. The most common logical operators are:
+
+- `>` and `>=` meaning greater than, and greater than or equal to. Usually used to compare two numbers
+- `<` and `<=` meaning less than or less than, and less than or equal to. Usually used to compare numbers.
+- `===` or the equality operator. Used to check exact equality of two values. Should only be used on primitive data types.
+- `!==` or the inequality operator. Used to check for inequality of two values. Should only be used on primitive data types.
+- `&&` or the and operator. Used to check if two separate conditions evaluate to true.
+- `||` or the or operator. Used to check if either of two separate conditions evaluate to true.
+
+The condition for an if statement is contained within parentheses `()` while the code to be executed is contained in curly brackets `{}`. An example of an if statement could be:
+
+```js
+if (2 === 2) {
+  console.log('Math still works')
+}
+```
+
+> As long as 2 is equal to 2, when we execute this file, the string `'Math still works'` will be printed to the console. However, if we write the following if statement:
+
+```js
+if (2 === 2 && 2 === 4) {
+  console.log('Math is broken')
+}
+```
+
+> Because, 2 will never be equal to both 2 and 4, we will never see this console log.
+
+You can also provide `else` and `else if` statements to an if statement to handle exceptions. To build on our previous examples we could say:
+
+```js
+if (2 === 2 && 2 === 4) {
+  console.log('Math is broken')
+} else {
+  console.log('Math still works')
+}
+```
+
+> In this case we would see the second console log.
+
+Else if statements are useful when comparing many conditions and are structured identially to regular if statements. For example:
+
+```js
+var num = 50
+
+if (num >= 0 && num < 25) {
+  console.log('Greater than zero, less than 25')
+} else if (num >= 25 && num < 100) {
+  console.log('Greater than 25, less than 100')
+} else {
+  console.log('Greater than 100')
+}
+```
+
+> Depending on the value assigned to the `num` variable, we will see a different console log.
 
 ### Scope and Let
 
