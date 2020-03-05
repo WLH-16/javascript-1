@@ -162,7 +162,7 @@ In JavaScript, data is represented using the following data types:
 - **Array**
   - Can be thought of as a list.
   - An array can contain any data type or even a mix of data types.
-  - Contained witin brackets `[]` with each value separated by a comma.
+  - Contained within brackets `[]` with each value separated by a comma.
   - Example:
   ```js
   var arrayOfNumbers = [1, 2, 3, 4, 5]
