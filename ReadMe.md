@@ -162,7 +162,7 @@ In JavaScript, data is represented using the following data types:
 - **Array**
   - Can be thought of as a list.
   - An array can contain any data type or even a mix of data types.
-  - Contained witin brackets `[]` with each value separated by a comma.
+  - Contained within brackets `[]` with each value separated by a comma.
   - Example:
   ```js
   var arrayOfNumbers = [1, 2, 3, 4, 5]
@@ -187,9 +187,7 @@ In JavaScript, data is represented using the following data types:
       friends: ['Jonathan', 'Josh', 'Spencer'],
     }
     ```
-  - Values in objects are usually referenced using _dot notation_.
-    _ For example: to access the `name` property on the object `person`, I would reference it as `person.name` which would give me the string `'Andrew'`
-    _ New key value pairs can be added to an existing object using dot notation. For example, to add a `pets` property to our `person` object we can just say:
+  - Values in objects are usually referenced using _dot notation_. For example: to access the `name` property on the object `person`, I would reference it as `person.name` which would give me the string `'Andrew'`. New key value pairs can be added to an existing object using dot notation. For example, to add a `pets` property to our `person` object we can just say:
     `js person.hasPets = false`
     > Note: Numbers, Strings, Booleans, Undefined, and Null are referred to as primitive data types because they only contain one thing. Objects and Arrays are referred to as complex data types because they each contain many values.
 
@@ -198,65 +196,6 @@ In JavaScript, data is represented using the following data types:
 ##### If statement and functions allow us to execute code in sections referred to as code blocks. A code block is defined by the use of curly brackets `{}`
 
 >
-
-#### If statements
-
----
-
-If statements execute code based on if a certain condition is met. This is determined by the use of logical operators. The most common logical operators are:
-
-- `>` and `>=` meaning greater than, and greater than or equal to. Usually used to compare two numbers
-- `<` and `<=` meaning less than or less than, and less than or equal to. Usually used to compare numbers.
-- `===` or the equality operator. Used to check exact equality of two values. Should only be used on primitive data types.
-- `!==` or the inequality operator. Used to check for inequality of two values. Should only be used on primitive data types.
-- `&&` or the and operator. Used to check if two separate conditions evaluate to true.
-- `||` or the or operator. Used to check if either of two separate conditions evaluate to true.
-
-The condition for an if statement is contained within parentheses `()` while the code to be executed is contained in curly brackets `{}`. An example of an if statement could be:
-
-```js
-if (2 === 2) {
-  console.log('Math still works')
-}
-```
-
-> As long as 2 is equal to 2, when we execute this file, the string `'Math still works'` will be printed to the console. However, if we write the following if statement:
-
-```js
-if (2 === 2 && 2 === 4) {
-  console.log('Math is broken')
-}
-```
-
-> Because, 2 will never be equal to both 2 and 4, we will never see this console log.
-
-You can also provide `else` and `else if` statements to an if statement to handle exceptions. To build on our previous examples we could say:
-
-```js
-if (2 === 2 && 2 === 4) {
-  console.log('Math is broken')
-} else {
-  console.log('Math still works')
-}
-```
-
-> In this case we would see the second console log.
-
-Else if statements are useful when comparing many conditions and are structured identially to regular if statements. For example:
-
-```js
-var num = 50
-
-if (num >= 0 && num < 25) {
-  console.log('Greater than zero, less than 25')
-} else if (num >= 25 && num < 100) {
-  console.log('Greater than 25, less than 100')
-} else {
-  console.log('Greater than 100')
-}
-```
-
-> Depending on the value assigned to the `num` variable, we will see a different console log.
 
 ### Functions
 
@@ -341,6 +280,65 @@ var hiBob = sayHi('Bob')
 ```
 
 > Remember: Functions and if statements can also be nested inside of each other. The possibilities are endless!
+
+### If Statements
+
+---
+
+If statements execute code based on if a certain condition is met. This is determined by the use of logical operators. The most common logical operators are:
+
+- `>` and `>=` meaning greater than, and greater than or equal to. Usually used to compare two numbers
+- `<` and `<=` meaning less than or less than, and less than or equal to. Usually used to compare numbers.
+- `===` or the equality operator. Used to check exact equality of two values. Should only be used on primitive data types.
+- `!==` or the inequality operator. Used to check for inequality of two values. Should only be used on primitive data types.
+- `&&` or the and operator. Used to check if two separate conditions evaluate to true.
+- `||` or the or operator. Used to check if either of two separate conditions evaluate to true.
+
+The condition for an if statement is contained within parentheses `()` while the code to be executed is contained in curly brackets `{}`. An example of an if statement could be:
+
+```js
+if (2 === 2) {
+  console.log('Math still works')
+}
+```
+
+> As long as 2 is equal to 2, when we execute this file, the string `'Math still works'` will be printed to the console. However, if we write the following if statement:
+
+```js
+if (2 === 2 && 2 === 4) {
+  console.log('Math is broken')
+}
+```
+
+> Because, 2 will never be equal to both 2 and 4, we will never see this console log.
+
+You can also provide `else` and `else if` statements to an if statement to handle exceptions. To build on our previous examples we could say:
+
+```js
+if (2 === 2 && 2 === 4) {
+  console.log('Math is broken')
+} else {
+  console.log('Math still works')
+}
+```
+
+> In this case we would see the second console log.
+
+Else if statements are useful when comparing many conditions and are structured identially to regular if statements. For example:
+
+```js
+var num = 50
+
+if (num >= 0 && num < 25) {
+  console.log('Greater than zero, less than 25')
+} else if (num >= 25 && num < 100) {
+  console.log('Greater than 25, less than 100')
+} else {
+  console.log('Greater than 100')
+}
+```
+
+> Depending on the value assigned to the `num` variable, we will see a different console log.
 
 ### Scope and Let
 
@@ -439,6 +437,134 @@ person.name = 'Fred'
 > It is good practice to declare variables that are hardcoded or that you do not want to change using `const`. 
 
 # Additional Resources
+
+## Concepts
+
+<details>
+
+<summary> <code> Variables </code> </summary>
+
+* [JS Variables](https://www.w3schools.com/js/js_variables.asp)
+
+</details>
+
+<details>
+
+<summary> <code> Data Types </code> </summary>
+
+* [Understanding JS Data Types](https://codeburst.io/javascript-data-types-explained-347555cd2d4d)
+
+</details>
+
+<details>
+
+<summary> <code> Arrays </code> </summary>
+
+```js
+// declare an empty array
+let myThings = [];
+
+// declare an array with items
+let myThings = ['Bike', 7, {name: 'Jeff'}, ['Catfish']]
+```
+
+</details>
+
+<details>
+
+<summary> <code> Objects </code> </summary>
+
+```js
+// declare an empty object
+let car = {}
+
+// declare an object with properties
+let car = {
+  make: 'Ford',
+  model: 'GT',
+  year: 2019
+}
+
+// adding or updating properties with dot notation
+car.miles = 100;
+
+// adding or updating properties with bracket notation
+// if miles already exists on the object, this would change it's value
+// if it doesn't this will set it as a key with a value of 150
+car['miles'] = 150
+
+// if a property doesn't exist on an object, it's considered undefined
+
+car.owner === undefined // true
+```
+
+</details>
+
+<details>
+
+<summary> <code> Conditionals </code> </summary>
+
+* [if..else if..else](https://www.w3schools.com/js/js_if_else.asp)
+* [Logical Operators](https://www.w3schools.com/js/js_comparisons.asp)
+
+</details>
+
+<details>
+
+<summary> <code> Functions </code> </summary>
+
+```js
+// Function Declaration
+
+function doTheThing() {
+  return 'Did the thing';
+}
+
+// Function Expression
+
+let doTheThing = function() {
+  return 'Did the thing';
+}
+
+// Function Parameters, Arguments and Invoking (calling) a Function
+// name is a function parameter
+// a variable we'll use in our function body
+
+function sayMyName(name) {
+
+// the string 'Your name is Jeff' will be output
+// from this function because of the return keyword
+
+  return 'Your name is ' + name;
+}
+
+// function invocation
+// parentheses after the function tell the function to run
+// The string Jeff is called an argument (a value passed to a function and received as a parameter)
+sayMyName('Jeff');
+
+// Here we're passing more arguments than there are parameters
+// Only Jeff will be received as "name" in the parameter list
+sayMyName('Jeff', 'Karen')
+```
+
+</details>
+
+<details>
+
+<summary> <code> Scope </code> </summary>
+
+* [JS Scope](https://www.w3schools.com/js/js_scope.asp)
+
+</details>
+
+<details>
+
+<summary> <code> Let </code> </summary>
+
+* [Let keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+
+</details>
 
 ## General
 
